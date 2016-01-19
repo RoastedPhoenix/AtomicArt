@@ -1,0 +1,25 @@
+body
+{
+    background: tan;
+}
+
+#CanvasContainer
+{
+  position: fixed;
+  transform: translate(25%, 50px);
+}
+
+#linkbutton
+{
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#signature
+{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: gray;
+}

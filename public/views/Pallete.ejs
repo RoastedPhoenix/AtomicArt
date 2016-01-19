@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Atomic Art</title>
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <link rel="stylesheet" href="css/CrusadingStyleSheet.css">
+  <link rel="stylesheet" href="css/spectrum.css">
+</head>
+<body>
+  <script src='js/jquery-1.11.3.min.js' type='text/javascript'></script>
+  <script src='js/jquery.ui.widget.js' type='text/javascript'></script>
+  <script src='js/jquery.iframe-transport.js' type='text/javascript'></script>
+  <script src='js/jquery.fileupload.js' type='text/javascript'></script>
+  <script src='js/jquery.cloudinary.js' type='text/javascript'></script>
+  <script src="semantic/dist/semantic.min.js"></script>
+  <script src="js/spectrum.js"></script>
+  <div class="ui left fixed inverted vertical menu">
+    <a class="item">
+      <div class="ui green header">Brush Size:
+        <div class="ui input">
+          <input id="BrushSize" type="number" min="1" max="250" oninput="SetBrushSize()">
+        </div>
+      </div>
+    </a>
+    <a class="item">
+      <div class="ui green header">Title:
+        <div class="ui fluid input">
+          <input placeholder="Title" id="NewTitle" type="text" oninput="ChangeTitle()">
+        </div>
+      </div>
+    </a>
+    <a class="item">
+      <div id="PaintColor" class="ui green header">
+        Select Color:
+        <input type='text' id="ColorSelector">
+      </div>
+    </a>
+    <a class="item">
+      <div class="ui fluid orange icon button" onclick="DownloadImage()">
+        Download Image
+        <br>
+        <i class="big download icon"></i>
+      </div>
+    </a>
+    <a class="item">
+      <div class="ui fluid yellow icon button" onclick="UploadImage()">
+        Upload Image
+        <br>
+        <i class="big cloud upload icon"></i>
+      </div>
+    </a>
+  </div>
+  <div id="CanvasContainer" class="ui container">
+    <a class="item">
+      <canvas id="canvas" width="800" height="800"></canvas>
+    </a>
+  </div>
+  <a href="/PalleteImages">
+    <div id="linkbutton" class="ui mini purple button">
+      Images
+    </div>
+  </a>
+  <code id="signature">ΓΩΓΕ</code>
+  <script src="js/jawascript.js"></script>
+
+</body>
+</html>
